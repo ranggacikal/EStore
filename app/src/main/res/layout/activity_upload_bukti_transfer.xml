@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp"
+    tools:context=".UploadBuktiTransferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti Transfer"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/img_upload_tf"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_pilih_tf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Pilih Gambar Bukti Transfer"/>
+
+        <Button
+            android:id="@+id/btn_upload_gambar_tf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Upload Gambar"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

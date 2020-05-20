@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp"
+    tools:context=".LihatBuktiTransferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUKTI TRANSFER"
+            android:textColor="#b30707"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/orderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID : "
+                android:textColor="#b30707"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/text_id_bukti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/orderID"
+                android:text="00"
+                android:textColor="#b30707"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_lihat_bukti"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/button_konfirmasi_bukti"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_background"
+            android:text="Konfirmasi Pembayaran"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/button_batalkan_bukti"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_background"
+            android:text="Batalkan Pesanan"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+</ScrollView>

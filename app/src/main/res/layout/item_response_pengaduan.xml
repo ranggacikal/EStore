@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="7dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/text_balas_nama_pengadu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:textColor="#b30707"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Nama Pengadu"/>
+
+        <TextView
+            android:id="@+id/text_isi_aduan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#b30707"
+            android:textSize="15sp"
+            android:text="Isi Aduan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#b30707"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Admin"/>
+
+        <TextView
+            android:id="@+id/text_isi_balasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#b30707"
+            android:textSize="15sp"
+            android:text="Isi Balasan"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/pdfToko"
+    tools:context=".DetailTransaksiTokoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ID TRANSAKSI :"
+        android:textColor="#B30707"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txt_id_detailTrans_toko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="ID"
+        android:textColor="#B30707"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="Nama Pelanggan :"
+        android:textColor="#B30707"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_nama_detailTrans_toko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="Nama Dia"
+        android:textColor="#B30707"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="List Barang"
+                android:textColor="#B30707"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txt_list_detailTrans_toko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="List Dia"
+                android:textColor="#B30707"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="Total Harga"
+                android:textColor="#B30707"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txt_totalHarga_detailTrans_toko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="Rp. xxxx"
+                android:textColor="#B30707"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tanggal_detailTrans_toko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="22 Jan 2020"
+                android:textColor="#B30707"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btn_pdf_toko"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#fff"
+                android:text="Print PDF"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

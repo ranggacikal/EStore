@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp"
+    tools:context=".MemberPelangganActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logoestore"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Member"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_daftar_member"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama : "
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="15sp"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/text_nama_daftar_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAMA LENGKAP"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail : "
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="15sp"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/text_email_daftar_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email LENGKAP"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Untuk Mendaftar Sebagai Member, Anda Harus Mengisi Nomer Telepon Anda :"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="10sp"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/edt_no_telpon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:hint="No. Telepon"
+            android:textColor="#B30707"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/button_daftar_member"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button_background"
+            android:text="Daftar Member"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+</ScrollView>

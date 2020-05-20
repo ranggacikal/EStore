@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EStore</string>
+    <string name="berhasil_daftar">Pendaftaran Sebagai Member Berhasil, Silahkan tunggu 15 - 30 Menit Untuk verifikasi</string>
+    <string name="lapor_admin">Silahkan hubungi admin jika ada permasalahan dalam pendaftaran, melalui tombol/icon pengaduan</string>
+
+    <string-array name="level">
+        <item>Pelanggan</item>
+        <item>Toko</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="MetodePembayaran">
+        <item>Cash</item>
+        <item>Transfer</item>
+    </string-array>
+
+    <string-array name="MetodePengambilan">
+        <item>Di Toko</item>
+        <item>Di Antar</item>
+    </string-array>
+
+    <string-array name="StatusPesanan">
+        <item>Pesanan Di Proses</item>
+        <item>Pesanan Di Antar</item>
+        <item>Pesanan Sudah Siap</item>
+    </string-array>
+
+    <string-array name="JenisKelamin">
+        <item>Laki - Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>

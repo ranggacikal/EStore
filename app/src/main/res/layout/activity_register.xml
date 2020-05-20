@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundapp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logoestore"
+            android:layout_marginBottom="15dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_register"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logoestore"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+            <Button
+                android:id="@+id/button_pilih_gambar"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:text="Pilih Gambar"
+                android:background="@drawable/button_background"/>
+
+        <EditText
+            android:id="@+id/edt_nama_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:hint="Nama Lengkap"
+            android:textColor="#000"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_no_ktp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="No. KTP"
+            android:textColor="#000"
+            android:inputType="number"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_no_telpon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="No. Telpon"
+            android:textColor="#000"
+            android:inputType="number"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_tempat_lahir"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="25dp"
+                android:hint="Tempat Lahir"
+                android:textColor="#000"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_tanggal_lahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="Tanggal Lahir"
+                android:layout_marginRight="25dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"/>
+        <Spinner
+            android:id="@+id/spinner_jenis_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:entries="@array/JenisKelamin"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="username"
+            android:textColor="#000"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="E - Mail"
+            android:textColor="#000"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="Password"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:hint="Re-password"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button_background"
+            android:text="REGISTER"
+            android:textColor="#FFF"
+            android:layout_marginBottom="15dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

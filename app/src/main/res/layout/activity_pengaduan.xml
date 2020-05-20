@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaduanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logoestore"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaduan"
+            android:textColor="#b30707"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Nama Pengadu : "
+            android:textColor="#b30707"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/text_nama_pengadu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="NAMA DIA"
+            android:textColor="#b30707"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/edt_aduan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aduan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="4"
+            android:gravity="top|left"
+            android:maxLines="9"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:id="@+id/button_pengaduan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_background"
+            android:text="KIRIM ADUAN"
+            android:textColor="#FFF"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/button_lihat_response"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_background"
+            android:text="Response Pengaduan"
+            android:textColor="#FFF"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+</ScrollView>

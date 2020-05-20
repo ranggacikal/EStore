@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="7dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan : "
+            android:textColor="#B30707"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/text_pelanggan_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Toko :"
+            android:textColor="#B30707"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/text_toko_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOKO XXXX"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Pesanan"
+            android:textColor="#B30707"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/text_status_pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Selesai"
+            android:textColor="#B30707"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID Pesanan"
+                    android:textColor="#B30707"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/text_id_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3000000"
+                    android:textColor="#B30707"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List Pesanan"
+                    android:textColor="#B30707"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/text_list_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIST"
+                    android:textColor="#B30707"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Harga"
+                    android:textColor="#B30707"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/text_total_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 000.000"
+                    android:textColor="#B30707"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp">
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/metode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metode Pembayaran : "
+                android:textColor="#B30707"
+                android:textSize="10sp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/text_metode_bayar_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash / Transfer"
+                android:layout_toRightOf="@+id/metode"
+                android:textColor="#B30707"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_gravity="center"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_upload_tf"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Upload Bukti Transfer"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_konfirmasi_tf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bukti Transfer Sudah Di Upload"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textColor="#b30707"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

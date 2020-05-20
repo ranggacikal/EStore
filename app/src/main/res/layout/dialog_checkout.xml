@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/cart_plus_minus_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/product_cart_code"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metode Pembayaran"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_metode_pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/MetodePembayaran"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metode Pengambilan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_metode_pengambilan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/MetodePengambilan"/>
+
+            <EditText
+                android:id="@+id/edt_alamat_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:minLines="4"
+                android:gravity="top|left"
+                android:maxLines="7"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Jika Metode Pengambilan Di Toko\ntidak perlu isi Form Alamat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="10sp"
+                android:textColor="#B30707"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/checkout_cart_dialog"
+            android:text="Checkout"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</LinearLayout>
